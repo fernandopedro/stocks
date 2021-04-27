@@ -46,7 +46,6 @@
                 </b-col>
             </b-row>
         </b-form>
-        <!-- <hr> -->
         <b-table hover striped :items="users" :fields="fields" class="mt-5">
             <template slot="actions" slot-scope="data">
                 <b-button variant="warning" @click="loadUser(data.item)" class="mr-2">
@@ -72,9 +71,9 @@ export default {
             user: {},
             users: [],
             fields: [
-                { key: 'id', label: 'ID', sortable: true},
-                { key: 'name', label: 'Name', sortable: true},
-                { key: 'email', label: 'E-mail', sortable: true},
+                { key: 'id', label: 'ID', sortable: true },
+                { key: 'name', label: 'Name', sortable: true },
+                { key: 'email', label: 'E-mail', sortable: true },
                 { key: 'admin', label: 'Administrator?', sortable: true, 
                     formatter: value => value ? 'Yes' : 'No' },
                 { key: 'actions', label: 'Actions' }

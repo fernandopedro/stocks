@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from '@/components/home/Home'
 import AdminPages from '@/components/admin/AdminPages'
+import Stocks from '@/components/template/Stock'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
         name: 'adminPages',
         path: '/admin',
         component: AdminPages
+    },
+    {
+        name: 'stocks',
+        path: '/stocks',
+        component: Stocks
     }
 ]
 

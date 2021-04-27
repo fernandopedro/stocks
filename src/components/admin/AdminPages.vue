@@ -1,7 +1,7 @@
 <template>
     <div class="AdminPages">
         <PageTitle icon="fa fa-cogs" main='Administration'
-            sub="Users and others" />
+            sub="Users and permissions*" />
         <div class="admin-pages-tabes">
             <b-card no-body>
                 <b-tabs card>
