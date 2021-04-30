@@ -42,7 +42,7 @@
                 <b-col xs="12">
                     <b-button variant="primary" v-if="mode === 'save'" @click="save">Save</b-button>
                     <b-button variant="danger" v-if="mode === 'remove'" @click="remove">Delete</b-button>
-                    <b-button class="ml-2" @click="reset">Cancelar</b-button>
+                    <b-button class="ml-2" @click="reset">Cancel</b-button>
                 </b-col>
             </b-row>
         </b-form>
