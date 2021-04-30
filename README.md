@@ -1,4 +1,6 @@
-# frontend
+# frontend to stocks-api
+
+Using vuejs to develop this
 
 ## Project setup
 ```
