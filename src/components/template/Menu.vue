@@ -1,7 +1,7 @@
 <template>
     <aside class="menu" v-show="isMenuVisible">
         <router-link to="/stocks">Stocks</router-link>
-        <router-link to="/admin">Operations</router-link>
+        <router-link to="/operations">Operations</router-link>
     </aside>
 </template>
 
