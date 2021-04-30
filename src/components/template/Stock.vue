@@ -30,7 +30,9 @@
                 </b-col>
             </b-row>
         </b-form>
-        <b-table hover striped :items="stocks" :fields="fields" class="mt-5">
+        <b-table hover striped :items="stocks" :fields="fields" class="mt-5"
+            :sort-by.sync="sortBy"
+        >
             <template slot="actions" slot-scope="data">
                 <b-button variant="warning" @click="loadStock(data.item)" class="mr-2">
                     <i class="fa fa-pencil"></i>
@@ -57,12 +59,13 @@ export default {
             stock: {},
             stocks: [],
             fields: [
-                { key: 'id', label: 'ID', sortable: true },
+                'id',
                 { key: 'code', label: 'Code', sortable: true },
                 { key: 'name', label: 'Name', sortable: true },
                 { key: 'actions', label: 'Actions' }
 
-            ]
+            ],
+            sortBy: 'code'
         }
     },
     methods: {

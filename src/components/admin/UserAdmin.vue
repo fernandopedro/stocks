@@ -46,7 +46,8 @@
                 </b-col>
             </b-row>
         </b-form>
-        <b-table hover striped :items="users" :fields="fields" class="mt-5">
+        <b-table hover striped :items="users" :fields="fields" class="mt-5"
+            :sort-by.sync="sortBy">
             <template slot="actions" slot-scope="data">
                 <b-button variant="warning" @click="loadUser(data.item)" class="mr-2">
                     <i class="fa fa-pencil"></i>
@@ -71,13 +72,13 @@ export default {
             user: {},
             users: [],
             fields: [
-                { key: 'id', label: 'ID', sortable: true },
                 { key: 'name', label: 'Name', sortable: true },
                 { key: 'email', label: 'E-mail', sortable: true },
                 { key: 'admin', label: 'Administrator?', sortable: true, 
                     formatter: value => value ? 'Yes' : 'No' },
                 { key: 'actions', label: 'Actions' }
-            ]
+            ],
+            sortBy: 'name'
         }
     },
     methods: {
