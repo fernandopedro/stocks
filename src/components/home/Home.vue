@@ -3,6 +3,8 @@
         <PageTitle icon="fa fa-home" main="Dashboard"
             sub="Stocks management" />
         <div class="stats">
+            <Stat title="Total value" :value="formatCurrency(stat.totalValueOperations)"
+                icon="fa fa-folder" color="#d54d50" />
             <Stat title="Stocks" :value="stat.stocks"
                 icon="fa fa-folder" color="#d54d50" />
             <Stat title="Operations" :value="stat.operations"
