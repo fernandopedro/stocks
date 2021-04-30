@@ -73,7 +73,7 @@ export default {
             })
         },
         loadStock(stock, mode = 'save') {
-            this.stock = stock
+            this.stock = { ...stock }
             this.mode = mode
         },
         reset() {
@@ -83,7 +83,7 @@ export default {
         },
         save() {
             const method = this.stock.id ? 'put' : 'post'
-            const id = this.stock.id ? `/${this.stock.id}` : ''
+            const id = this.stock.id ? `${this.stock.id}` : ''
             axios[method](`${baseApiUrl}/stocks/${id}`, this.stock)
                 .then(() => {
                     this.$toasted.global.defaultSuccess()
