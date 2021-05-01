@@ -6,6 +6,7 @@ import App from './App'
 
 import './config/bootstrap'
 import './config/msgs'
+import './config/formatter'
 import store from './config/store'
 import router from './config/router'
 
@@ -13,7 +14,7 @@ Vue.config.productionTip = false
 
 // TEMPORARY!!!
 
-require('axios').defaults.headers.common['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImZlcm5hbmRvcGVkcm9AZ21haWwuY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTYxOTQzODgyMiwiZXhwIjoxNjE5Njk4MDIyfQ.n-DR4aQfjq-gcFi_GK7j_HaTY8G2dM_3NoK3g7qhw7M'
+require('axios').defaults.headers.common['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IkZlcm5hbmRvIFBlZHJvIiwiZW1haWwiOiJmZXJuYW5kb3BlZHJvQGdtYWlsLmNvbSIsImFkbWluIjp0cnVlLCJpYXQiOjE2MTk4MTEwODYsImV4cCI6MTYyMDA3MDI4Nn0.DjTbNckSIT8Jvl3onsU5WPghcdvhu4ZLNdLPhsyYPZE'
 
 new Vue({
   store,
